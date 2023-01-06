@@ -1,0 +1,55 @@
+.game {
+  width: 600px;
+  height: 230px;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+.footer {
+  text-align: center;
+}
+#dino {
+  width: 70px;
+  height: 70px;
+  background-image: url(img/try-5.png);
+  background-size: 70px 70px;
+  position: relative;
+  top: 150px;
+}
+#cactus {
+  width: 15px;
+  height: 15px;
+  background-image: url(img/ball.png);
+  background-size: 15px 15px;
+  position: relative;
+  top: 130px;
+  left: 580px;
+  animation: kaktusMov 1s infinite linear;
+}
+@keyframes kaktusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
